@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jp.cordea.oreo.FontActivity"
+    tools:showIn="@layout/activity_font">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/abril_fatface_text_view"
+            android:text="@string/abril_fatface"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_marginBottom="@dimen/font_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dancing_script_text_view"
+            android:text="@string/dancing_script"
+            android:fontFamily="@font/dancing_script"
+            android:layout_marginBottom="@dimen/font_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/orbitron_text_view"
+            android:text="@string/orbitronTextView"
+            android:fontFamily="@font/orbitron"
+            android:layout_marginBottom="@dimen/font_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/poiret_one_text_view"
+            android:text="@string/poiret_one"
+            android:fontFamily="@font/poiret_one"
+            android:layout_marginBottom="@dimen/font_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/shadows_into_light_text_view"
+            android:text="@string/shadow_into_light"
+            android:fontFamily="@font/shadows_into_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="@dimen/font_margin"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.TextInputLayout>
+</FrameLayout>
